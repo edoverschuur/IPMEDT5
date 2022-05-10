@@ -13,7 +13,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(CountTableSeeder::class);
-        $this->call(AmountTableSeeder::class);
+        $this->call(DataTableSeeder::class);
+        // $this->call(CountTableSeeder::class);
+        // $this->call(AmountTableSeeder::class);
     }
 }

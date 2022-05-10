@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use DB;
 
-class AmountTableSeeder extends Seeder
+class DataTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,8 +14,9 @@ class AmountTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('led')->insert([
-            'led_on' => 'uit'
+        DB::table('data')->insert([
+            'temperature' => 0,
+            'humidity' => 0
         ]);
     }
 }
